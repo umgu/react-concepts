@@ -1,0 +1,49 @@
+13/04 (1) ==> Basics of React
+
+18/04 (1) ==> 1) More about State
+          2) Props
+          3) states and props
+          4) Adding normal JS logic to component
+          5) Children prop
+
+19/04 (1.5) ==> 1) How React works
+          2) React Fragment
+          3) parent-child communication
+          4) what is state change
+          5) React events
+
+20/04 (1.5)==> 1) taking data from user
+          2) Controlled Vs. Uncontrolled
+          3) What is renderable?
+          4) rendering list of data
+          5) 'key' prop
+
+
+  value     onChange     result
+   No         NO            Uncontrolled
+   No         Yes           Uncontrolled
+   Yes        No            Controlled/Fixed
+   Yes         Yes          Controlled
+
+21/04 (2) ==> 1) Styles
+              2) useEffect
+
+22/04 (1.25)==> 1) More about useEffect()
+
+23/04 ==> 1) useReducer()
+
+* pros of this changes:
+    - All operations in one place
+    - Easy to understand and extend
+    - no one components has full control of the state
+        we can only modify the state in listed ways
+    - Debugging will be Easy
+    - Component do not have to include business logic
+
+* Diff b/w useState and useReducer
+    - useState is fundamental hook but useReducer is not
+        we can re-create useReducer but we can't do the same with useState
+    - useState is supposed to be atomic but useReducer is for composite state
+    - State setter function is not generally shared but the dispatch can be shared
+    -useState forces the state manipulation to be kept in the component whereas useReducer
+     allows us to consolidate the 'business logic' into reducer function.

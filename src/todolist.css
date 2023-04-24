@@ -1,0 +1,6 @@
+.internal {
+    background-color: green;
+    display: flex;
+    margin: 4px;
+    padding: 0.5rem 1rem;
+}
