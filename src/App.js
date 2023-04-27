@@ -7,7 +7,8 @@ import Form from './Form';
 import Renderable from './Renderable';
 import ExternalCss from './ExternalCss';
 import Effects from './Effects';
-import Main from './without-reducer/Main';
+import Cart from './cart';
+import Stopwatch from './Stopwatch';
 
 export default function App() {
   // const [change, setChange] = useState(true);
@@ -20,8 +21,9 @@ export default function App() {
       {/* <Renderable /> */}
       {/* <ExternalCss /> */}
       {/* <Effects /> */}
-      <Main />
+      <Cart />
       {/* <button onClick={() => setChange(!change)}>Change</button> */}
+      {/* <Stopwatch /> */}
     </div>
   );
 }

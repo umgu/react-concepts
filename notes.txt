@@ -47,3 +47,18 @@
     - State setter function is not generally shared but the dispatch can be shared
     -useState forces the state manipulation to be kept in the component whereas useReducer
      allows us to consolidate the 'business logic' into reducer function.
+
+27/04 ==> useContext()
+
+    It is done with 3 steps.
+    1) create context object
+    2) Use Provider component from context object
+    3) make component as a comsumer using useContext.
+
+
+
+    no state  no props        Easiest to use        not very flexible
+    state     no props        Easy to use           some what flexible
+    no state  props           tiny bit difficult    more flexible
+    state     props           difficult to use      very flexible
+    state     props + context more difficult to use less flexible   //reusability
