@@ -48,7 +48,7 @@
     -useState forces the state manipulation to be kept in the component whereas useReducer
      allows us to consolidate the 'business logic' into reducer function.
 
-27/04 ==> useContext()
+27/04(2) ==> useContext()
 
     It is done with 3 steps.
     1) create context object
