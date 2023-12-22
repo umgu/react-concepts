@@ -8,7 +8,6 @@ const Form = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log({fName, lName})
-        // console.log(event.target.queryS);
     }
     return (
         <form onSubmit={handleSubmit}>
