@@ -2,8 +2,10 @@ import "./App.css";
 import Counter from "./Counter";
 import { createElement, useState } from "react";
 import Calculator from "./Calculator";
-import TodoList from "./TodoList";
+
+import TodoList from "./TodoList"
 import Form from "./Form";
+
 import Renderable from "./Renderable";
 import ExternalCss from "./ExternalCss";
 import Effects from "./Effects";
@@ -21,7 +23,7 @@ export default function App() {
   return (
     <BrowserRouter>
       {/* <Navbar /> */}
-      
+
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/Home" element={<Home />} />
