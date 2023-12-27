@@ -20,6 +20,7 @@ export default function App() {
   // const [change, setChange] = useState(true);
   return (
     <BrowserRouter>
+    
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Navbar />}>
