@@ -10,6 +10,25 @@ const Form = () => {
         console.log({fName, lName})
     }
     return (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <form onSubmit={handleSubmit}>
             <label>First Name:
                 <input value={fName} name="first-name" onChange={(e) => {
