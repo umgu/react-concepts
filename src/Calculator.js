@@ -9,6 +9,8 @@ const Calculator = () => {
 
         
         const matrix = [];
+
+        
         for (let i = 0; i < m; i++) {
           const row = [];
           for (let j = 0; j < n; j++) {
