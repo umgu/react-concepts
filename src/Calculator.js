@@ -5,7 +5,7 @@ const Calculator = () => {
     const [operand1, setOperand1] = useState(0);
     const [operand2, setOperand2] = useState(0);
 
-    function createMatrixNonOptimized(m, n, defaultValue) {
+    function createMatrix(m, n, defaultValue) {
         const matrix = [];
         for (let i = 0; i < m; i++) {
           const row = [];
