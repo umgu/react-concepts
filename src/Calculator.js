@@ -6,6 +6,8 @@ const Calculator = () => {
     const [operand2, setOperand2] = useState(0);
 
     function createMatrix(m, n, defaultValue) {
+
+        
         const matrix = [];
         for (let i = 0; i < m; i++) {
           const row = [];
