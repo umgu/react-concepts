@@ -21,7 +21,7 @@ const Calculator = () => {
       const rows = 3;
       const cols = 4;
       const defaultValue = 0;
-      const myMatrix = createMatrixNonOptimized(rows, cols, defaultValue);
+      const myMatrix = createMatrix(rows, cols, defaultValue);
       
       // Display the created matrix
       console.log(myMatrix);
