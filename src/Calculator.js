@@ -6,6 +6,11 @@ const Calculator = () => {
     const [operand2, setOperand2] = useState(0);
 
 
+    const a = 10;
+    const b = 20;
+    const ans = a + b;
+
+
     function createMatrix(m, n, defaultValue) {
 
         
