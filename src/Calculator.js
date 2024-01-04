@@ -5,6 +5,38 @@ const Calculator = () => {
     const [operand1, setOperand1] = useState(0);
     const [operand2, setOperand2] = useState(0);
 
+
+    const a = 10;
+    const b = 20;
+    const ans = a + b;
+
+
+    function createMatrix(m, n, defaultValue) {
+
+        
+        const matrix = [];
+
+        for (let i = 0; i < m; i++) {
+          const row = [];
+          for (let j = 0; j < n; j++) {
+            row.push(defaultValue);
+          }
+          matrix.push(row);
+        }
+        return matrix;
+      }
+      
+      // Usage example:
+      const rows = 3;
+      const cols = 4;
+      const defaultValue = 0;
+      const myMatrix = createMatrix(rows, cols, defaultValue);
+      
+      // Display the created matrix
+      console.log(myMatrix);
+
+
+
     const setOperand = (val, opNo) => {
         if(opNo === 1) {
             setOperand1(val);

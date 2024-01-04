@@ -2,8 +2,10 @@ import "./App.css";
 import Counter from "./Counter";
 import { createElement, useState } from "react";
 import Calculator from "./Calculator";
-import TodoList from "./TodoList";
+
+import TodoList from "./TodoList"
 import Form from "./Form";
+
 import Renderable from "./Renderable";
 import ExternalCss from "./ExternalCss";
 import Effects from "./Effects";
@@ -17,11 +19,37 @@ import Blog from "./routing-example/Blog";
 import Contact from "./routing-example/Contact";
 
 export default function App() {
+
+
+  function createMatrix(m, n, defaultValue) {
+
+        
+    const matrix = [];
+
+    for (let i = 0; i < m; i++) {
+      const row = [];
+      for (let j = 0; j < n; j++) {
+        row.push(defaultValue);
+      }
+      matrix.push(row);
+    }
+    return matrix;
+  }
+  
+  // Usage example:
+  const rows = 3;
+  const cols = 4;
+  const defaultValue = 0;
+  const myMatrix = createMatrix(rows, cols, defaultValue);
+  
+  // Display the created matrix
+  console.log(myMatrix);
   // const [change, setChange] = useState(true);
   return (
     <BrowserRouter>
     
       {/* <Navbar /> */}
+
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/Home" element={<Home />} />
